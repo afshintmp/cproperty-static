@@ -1,0 +1,296 @@
+@media only screen and (max-width: 992px) {
+    .all-tumbs {
+        display: none;
+    }
+
+    #nav-menu {
+        margin-bottom: 25px;
+    }
+
+    .profile-input-custom > .input-custom > input {
+
+    }
+
+    .login-end-cart {
+        margin-bottom: 30px;
+    }
+
+    .dec--ui--.color-97 {
+        height: unset !important;
+        margin-bottom: 35px;
+    }
+
+    .b-title.inner-property-title {
+        margin-top: 50px;
+    }
+
+    .h-400 {
+        height: unset !important;
+    }
+
+    .tabs > span {
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+        margin-right: 50px;
+        margin-left: 50px;
+        border-bottom: 1px solid #E3E3E3;
+        border-right: 0 !important;
+        height: unset !important;
+    }
+
+    .promotion-head {
+        position: relative;
+    }
+
+    .promotion-head > .for-vertical {
+        position: absolute;
+        left: -32px;
+    }
+
+    .dreamstm-title {
+        font-size: 26px;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 16px !important;
+    }
+
+    .tabs > span::after {
+        -webkit-transition: 0.3ms all;
+        -moz-transition: 0.3ms all;
+        -ms-transition: 0.3ms all;
+        -o-transition: 0.3ms all;
+        transition: 0.3ms all;
+        display: none;
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 20px;
+        background: #FFB743;
+        top: 29px !important;
+        left: -80px;
+        z-index: -3;
+        /*display: none !important;*/
+        box-shadow: 0px -6px 19px 3px #FFB743;
+        overflow-x: hidden;
+    }
+
+    .tabs-controller-- {
+        height: unset !important;
+    }
+
+    .tabs > span {
+        display: block;
+    }
+
+    .c-cart-shadow {
+        background: #FFFFFF;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 36px 236px 100px rgba(0, 0, 0, 0.07);
+    }
+
+    .c-mt-categ {
+        margin-top: 0px;
+    }
+
+    .category-baner {
+        display: none !important;
+
+    }
+
+    .plans {
+        height: unset !important;
+        margin-bottom: unset;
+        padding-top: unset;
+    }
+
+    .--1, .--2 {
+        position: unset !important;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .plan-main::after {
+        display: none !important;
+    }
+
+    .mob-mt-18 {
+        margin-top: 18px;
+    }
+
+    .plan-sub-title, .plan-title {
+        font-size: 26px;
+    }
+
+    .plan-main {
+        padding: 25px;
+    }
+
+    .plan-head {
+        border-bottom: 1px solid #000;
+    }
+
+    .plan-head .plan-title {
+        display: inline-block;
+    }
+
+    .plan-head .plan-sub-title {
+        display: inline-block;
+        margin-top: 0px;
+        float: right;
+    }
+
+    .info-- {
+        display: block;
+        height: unset !important;
+    }
+
+    .plan-body > p {
+        display: block;
+    }
+
+    .plan-body.info--.text-00,
+    .plan-body.info--.text-00 > * {
+        font-size: 16px !important;
+        line-height: 40px !important;
+    }
+
+    .plans-info {
+        display: block;
+    }
+
+    .plan-main-shodow {
+        display: none;
+    }
+
+    .bottom-bar {
+        display: none;
+    }
+
+    .plans-price {
+        font-size: 26px;
+        line-height: 30px;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .plans-add-to-cart.btn-green {
+        width: 100%;
+        height: unset;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-top: 20px;
+    }
+
+    .dreamstm-text-- {
+        margin-bottom: 20px;
+    }
+
+    .plans .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .pr-34 {
+
+    }
+
+    .profile-tab-list {
+        display: inherit;
+    }
+
+    .profile-tab-list > div {
+        background: #fff;
+        border: 0;
+        box-shadow: 0px 4px 38px 3px rgba(0, 0, 0, 0.13);
+        margin-bottom: 25px;
+    }
+
+    .profile-tab-list {
+        background: unset;
+        box-shadow: unset;
+    }
+
+    .brardcurmbs {
+        display: none;
+    }
+
+    .uploader {
+
+        padding: 30px;
+        display: inline-block;
+    }
+
+    .ms-31 {
+        margin-left: 0;
+    }
+
+    .profile-input-custom > .input-custom {
+        width: unset !important;
+    }
+
+    .profile-input-custom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .profile-input-custom {
+        margin-bottom: 16px;
+    }
+
+    .uploader {
+        margin-bottom: 32px;
+    }
+
+    .profile-input-custom > label {
+
+
+    }
+
+    .admin-nav-bar {
+        margin-top: 21px;
+        padding-top: 30px;
+        margin-bottom: 21px;
+    }
+
+    .m-b-mob-25 {
+        margin-bottom: 25px;
+    }
+
+    .plans-add-to-cart > a {
+        font-size: 20px !important;
+    }
+
+    .login-end-cart-title {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'mazzard_m_light';
+        line-height: 18px;
+    }
+    .form-section {
+        background: #ffff;
+        z-index: 10;
+        position: relative;
+    }
+    .promotion-pi{
+        width: 100%!important;
+        height: unset!important;
+    }
+    .promotion-tab-sec{
+        display: block!important;
+    }
+    #pro_tab {
+        height: unset!important;
+    }
+    .develoepr-img{
+        height: unset;
+        width: 100%;
+    }
+    .developer-bio > p{
+        padding-left: 0!important;
+        margin-left: 0!important;
+        margin-top: 15px;
+    }
+}
