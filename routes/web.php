@@ -23,6 +23,9 @@ Route::prefix('/builds')->group(function (){
         $build = [];
         return view('StaticBuilds.eElement' , compact('build'));
     });
-
+    Route::get('/unity-south-langley',function (){
+        $build = [];
+        return view('StaticBuilds.UnitySouthLangley' , compact('build'));
+    });
 
 });

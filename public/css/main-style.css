@@ -748,14 +748,14 @@ ul {
 
 }
 
-.swiper-button-prev {
+.in-single.swiper-button-prev {
     width: 34px !important;
     height: 34px !important;
     background: rgb(179, 134, 93);
     /*left: -20px!important;*/
 }
 
-.swiper-button-prev::after {
+.in-single.swiper-button-prev::after {
     display: none;
 }
 
@@ -1413,9 +1413,7 @@ p {
     width: max-content;
 }
 
-.main-loc {
-    margin-left: 96px;
-}
+
 
 .pb-custom {
     padding-bottom: 100px;

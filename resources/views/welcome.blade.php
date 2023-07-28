@@ -159,7 +159,7 @@
 
     .swiper {
         width: 100%;
-        height: 300px;
+        /* height: 300px; */
         margin-left: auto;
         margin-right: auto;
     }
@@ -183,14 +183,14 @@
     .mySwiper .swiper-slide {
         width: 25%;
         height: 100%;
-        opacity: 0.4;
+      
     }
 
     .mySwiper .swiper-slide-thumb-active {
         opacity: 1;
     }
 
-    .swiper-slide img {
+    .main-slide .swiper-slide img {
         display: block;
         width: 100%;
         height: 100%;
@@ -214,9 +214,102 @@
         margin-top: 50vh;
         transform: translateY(-50%);
     }
+    .slider-info{
+        padding-left: 118px;
+    }
+    .slider-info h3 > span{
+        color: #B3865D!important;
+    }
+    .slider-info h3{
+        color: #fff!important;
+        
+        font-family: 'mazzard_m_bold';
+        font-size: 53px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+    .slider-info p{
+        color: #FFF!important;
+        font-family: Inter;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
+  display: inline-block;
+  width: unset;
+  margin-left: 60px;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 154%;
+ 
+}
+.swiper-pagination-current {
+  color: #FFF;
+  font-family: Arial;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 154%;
+  vertical-align: top;
+
+}
+.swiper-pagination-total {
+  color: #FFF;
+  font-family: Arial;
+  font-size: 47px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 154%;
+  vertical-align: top;
+ 
+
+}
+.swiper-button-next, .swiper-button-prev{
+    position: relative;
+}
+.swiper-pagination {
+  position: unset;
+  text-align: left;
+}
+.cursors--{
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev{
+    display: inline-block;
+    margin-left: 18px;
+    left: unset;
+    right: unset;
+    top: unset;
+    text-align: center
+}
+.swiper-button-next::after, 
+.swiper-button-prev::after{
+    content: " "!important;
+} 
+.mouse-icon{
+    position: absolute;
+    right: 81px;
+    bottom: 81px;
+    width: unset!important;
+    height: unset!important;
+    z-index: 15;
+}
 </style>
 <div class="main-slide" style="width: 100%;direction: ltr">
     <img src="{{asset('img/IMG.png')}}" class="main-cover" alt="">
+    <img src="{{asset('img/vuesax-outline-mouse.svg')}}" class="mouse-icon" alt="">
     <div class="picSwiper">
         <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
             <div class="swiper-wrapper">
@@ -230,18 +323,32 @@
                 </div>
 
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+           
         </div>
     </div>
     <div class="textSwiper">
         <div thumbsSlider="" class="swiper mySwiper ">
+            <div class="cursors--">
+               
+                <div class="swiper-pagination"></div>
+                
+                <div class="swiper-button-prev">
+                        <img src="{{asset('img/vuesax-outline-arrow-left.svg')}}" alt="">
+
+
+                </div>
+                <div class="swiper-button-next">
+                    <img src="{{asset('img/vuesax-outline-arrow-right.svg')}}" alt="">
+
+
+                </div>
+            </div>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="vertical-controller">
                         <div class="slider-info">
                             <h3>
-                                ELEMENTS
+                               <span>ELEMENTS</span> 
                             </h3>
                             <p>
                                 Experience refined European living in our latest apartment condo, perfectly situated in
@@ -258,7 +365,7 @@
                     <div class="vertical-controller">
                         <div class="slider-info">
                             <h3>
-                                Unity South Langley
+                                <span> Unity </span> South Langley
                             </h3>
                             <p>
                                 Unity South Langley welcomes you to the vibrant and flourishing neighbourhood of
@@ -301,6 +408,10 @@
             watchSlidesProgress: true, thumbs: {
                 swiper: swiper2,
             },
+            pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+            },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -308,57 +419,54 @@
         });
     </script>
 
-
-    {{--    <div class="swiper mySwiper">--}}
-    {{--        <div class="swiper-wrapper">--}}
-    {{--            <div class="swiper-slide main-slider-swiper">--}}
-
-    {{--                <img src="{{asset('img/main-slide/new.png')}}" alt="">--}}
-
-    {{--                <div class="slider-info">--}}
-    {{--                    <h3>--}}
-    {{--                        ELEMENTS--}}
-    {{--                    </h3>--}}
-    {{--                    <p>--}}
-    {{--                        Experience refined European living in our latest apartment condo, perfectly situated in the--}}
-    {{--                        scenic and vibrant neighbourhood of Burquitlam. Register your interest today and elevate your--}}
-    {{--                        expectations for a new standard of modern living at ELEMENTS--}}
-    {{--                    </p>--}}
-    {{--                </div>--}}
-    {{--            </div>--}}
-    {{--            <div class="swiper-slide main-slider-swiper">--}}
-    {{--                <img src="{{asset('img/main-slide/Unity_SouthLangley_Aerial_WIDE_Website-min-scaled-1.webp')}}" alt="">--}}
-    {{--                <div class="slider-info">--}}
-    {{--                    <h3>--}}
-    {{--                        Unity South Langley--}}
-    {{--                    </h3>--}}
-    {{--                    <p>--}}
-    {{--                        Unity South Langley welcomes you to the vibrant and flourishing neighbourhood of Downtown--}}
-    {{--                        Langley! This exquisite new condo development features five floors of stunning residencies with--}}
-    {{--                        commercial retail space below and an array of lifestyle amenities for you and your guests to--}}
-    {{--                        enjoy. A bright, sleek, modern stand-out development, destined to catch eyes and turn heads.--}}
-    {{--                        Located just steps from the city’s core, Unity South Langley is truly a central hub connecting--}}
-    {{--                        you to shopping malls, entertainment, and the rest of the Lower Mainland via the rapidly--}}
-    {{--                        developing Surrey-Langley Skytrain.--}}
-    {{--                    </p>--}}
-    {{--                </div>--}}
-    {{--            </div>--}}
-
-    {{--        </div>--}}
-    {{--    </div>--}}
 </div>
 <script>
     // var swiper = new Swiper(".mySwiper", {});
 </script>
-
+<style>
+    .main-loc-cart a{
+        text-decoration: none
+    }
+    .img-w-unset .icon{
+        width: unset!important;
+    }
+    .loc-cart-info > img{
+        width: unset!important;
+    } 
+    .latest-project-slider .swiper-slide {
+      width: 22%;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .latest-project-slider .swiper-slide-active{
+        width: 34%
+    }
+    .latest-project-slider .swiper-slide-active .loc-cart-small{
+        display: none!important
+    }
+    .latest-project-slider .swiper-slide-active .main-loc{
+        display: block!important;
+        
+    }
+    .latest-project-slider{
+        overflow: initial!important
+    }
+    .navigator-- {
+        position: absolute;
+        top: 15px;
+        right: 0;
+    }
+</style>
 <div class="latest-project" style="background-image: url('assets/img/Mask group.png')">
+ 
     <div class="container">
+
         <div class="block-title text-center mb-61 mob-mb-31">
             <div class="text-center  ">
                 <h3 class="position-relative">
                     latest projects
                     <span class="block-title-vector">
-                        <img src="assets/img/Vector.png" height="23" width="37"/>
+                        <img src="{{asset('img/Vector.png')}}" height="23" width="37"/>
                     </span>
                 </h3>
 
@@ -367,85 +475,311 @@
             commonly used in the graphic, print, and publishing industries for
             </span>
         </div>
-        <div class="w-custom">
 
-            <div class="d-inline-block main-loc" style="width: 300px">
-                <div class="c-cart-shadow main-loc-cart">
-                    <div class="main-loc-cart-img" style="background-image: url('public/images/rectangle-4362.png');">
-                        <!-- <img class="h-100" src="assets/img/sing.png"/> -->
-                    </div>
 
-                    <div class="p-s-e-23">
-                        <h2 class="c-card-title">
-                            <img src="assets/img/Vectorloc.svg" height="20" alt="">
-                            NY
-                        </h2>
-                        <p class="mb-0 color-97 main-loc-info">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                        </p>
+
+
+
+            <div class="swiper mySwiper3 latest-project-slider">
+                <div class="navigator--">
+                    <div class="swiper-button-next">
+                        <img src="{{asset('img/vuesax-outline-arrow-right-small.svg')}}" alt="">
 
                     </div>
-                    <div class="p-s-e-23">
-                        <p class=" c-cart-price color-green d-inline-block mb-0">
-                            $265,0000,000
-                        </p>
+                    <div class="swiper-button-prev">
+                        <img src="{{asset('img/vuesax-outline-arrow-right--small.svg')}}" alt="">
 
-                        <div class="clear-fix"></div>
-                    </div>
-
-
-                </div>
-            </div>
-
-            <div class="d-inline-block small-loc">
-                <div class="loc-cart loc-cart-small ">
-
-                    <img src="assets/img/Rectangle 4364.png" height="294" width="248"/>
-
-
-                    <div class="loc-cart-info ">
-
-                        <img src="assets/img/VectorWhite.png" height="39" width="33"/>
-
-                        <p>New York</p>
-                    </div>
-                </div>
-                <div class="loc-cart loc-cart-small ">
-
-                    <img src="assets/img/Rectangle 4364.png" height="294" width="248"/>
-
-
-                    <div class="loc-cart-info">
-
-                        <img src="assets/img/VectorWhite.png" height="39" width="33"/>
-
-                        <p>New York</p>
-                    </div>
-                </div>
-                <div class="loc-cart loc-cart-small ">
-
-                    <img src="assets/img/Rectangle 4364.png" height="294" width="248"/>
-
-
-                    <div class="loc-cart-info">
-
-                        <img src="assets/img/VectorWhite.png" height="39" width="33"/>
-
-                        <p>New York</p>
                     </div>
                 </div>
 
-            </div>
 
 
-        </div>
+
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                  
+                    <div class=" main-loc" style="width: 100%">
+                        <div class="c-cart-shadow main-loc-cart">
+                            
+                            <div class="main-loc-cart-img" style="background-image: url({{asset('img/main-slide/new.png')}});">
+                                <!-- <img class="h-100" src="assets/img/sing.png"/> -->
+                            </div>
+        
+                            <div class="p-s-e-23">
+                                <h2 class="c-card-title">
+                                    <img src="{{asset('img/Vectorloc.svg')}}" height="20" style="width: unset!important;display:inline-block">
+                                    Vancouver
+                                </h2>
+                                <p class="mb-0 color-97 main-loc-info">
+                                    Experience refined European living in our latest apartment condo, perfectly situated in the scenic and vibrant neighbourhood of Burquitlam. Register your interest today and elevate your expectations for a new standard of modern living at ELEMENTS. 
+                                </p>
+        
+                            </div>
+                            <div class="p-s-e-23">
+                                <p class=" c-cart-price color-green d-inline-block mb-0">
+                                    Mid 500's
+                                    -
+                                    1.260's
+                                    
+                                </p>
+        
+                                <div class="clear-fix"></div>
+                            </div>
+                    
+        
+                        </div>
+                    </div>
+                  
+                    <div class="loc-cart loc-cart-small " style="display:none;margin-top:81px;width: 100%">
+    
+                        <img src="{{asset('img/Rectangle 4364.png')}}" height="294" width="248"/>
+    
+    
+                        <div class="loc-cart-info ">
+    
+                            <img src="{{asset('img/VectorWhite.png')}}" height="39" class="icon" width="33"/>
+    
+                            <p>New York</p>
+                        </div>
+                    </div>
+                 
+               
+                </div>
+
+
+                <div class="swiper-slide">
+                    
+                    <div class="main-loc" style="display:none;width: 100%">
+                        <div class="c-cart-shadow main-loc-cart">
+                            <a href="">
+                            <div class="main-loc-cart-img" style="background-image: url({{asset('img/main-slide/Unity_SouthLangley_Aerial_WIDE_Website-min-scaled-1.webp')}});">
+                                <!-- <img class="h-100" src="assets/img/sing.png"/> -->
+                            </div>
+        
+                            <div class="p-s-e-23">
+                                <h2 class="c-card-title">
+                                    <img src="{{asset('img/Vectorloc.svg')}}" height="20" style="width: unset!important;display:inline-block">
+                                    Vancouver
+                                </h2>
+                                <p class="mb-0 color-97 main-loc-info">
+                                    Experience refined European living in our latest apartment condo, perfectly situated in the scenic and vibrant neighbourhood of Burquitlam. Register your interest today and elevate your expectations for a new standard of modern living at ELEMENTS. 
+                                </p>
+        
+                            </div>
+                            <div class="p-s-e-23">
+                                <p class=" c-cart-price color-green d-inline-block mb-0">
+                                    Mid 500's
+                                    -
+                                    1.260's
+                                    
+                                </p>
+        
+                                <div class="clear-fix"></div>
+                            </div>
+                        </a>
+        
+                        </div>
+                    </div>
+                    
+                    <div class="loc-cart loc-cart-small " style="margin-top:81px;width: 100%">
+    
+                        <img src="{{asset('img/main-slide/Unity_SouthLangley_Aerial_WIDE_Website-min-scaled-1.webp')}}" height="294" width="248"/>
+    
+    
+                        <div class="loc-cart-info ">
+    
+                            <img src="{{asset('img/VectorWhite.png')}}" height="39" class="icon" width="33"/>
+    
+                            <p>Vancouver</p>
+                        </div>
+                    </div>
+                  
+                </div>
+
+
+
+
+                <div class="swiper-slide">
+                    
+                    <div class="main-loc" style="display:none;width: 100%">
+                        <div class="c-cart-shadow main-loc-cart">
+                            <a href="">
+                            <div class="main-loc-cart-img" style="background-image: url({{asset('img/main-slide/new.png')}});">
+                                <!-- <img class="h-100" src="assets/img/sing.png"/> -->
+                            </div>
+        
+                            <div class="p-s-e-23">
+                                <h2 class="c-card-title">
+                                    <img src="{{asset('img/Vectorloc.svg')}}" height="20" style="width: unset!important;display:inline-block">
+                                    Vancouver
+                                </h2>
+                                <p class="mb-0 color-97 main-loc-info">
+                                    Experience refined European living in our latest apartment condo, perfectly situated in the scenic and vibrant neighbourhood of Burquitlam. Register your interest today and elevate your expectations for a new standard of modern living at ELEMENTS. 
+                                </p>
+        
+                            </div>
+                            <div class="p-s-e-23">
+                                <p class=" c-cart-price color-green d-inline-block mb-0">
+                                    Mid 500's
+                                    -
+                                    1.260's
+                                    
+                                </p>
+        
+                                <div class="clear-fix"></div>
+                            </div>
+                        </a>
+        
+                        </div>
+                    </div>
+                    
+                    <div class="loc-cart loc-cart-small " style="margin-top:81px;width: 100%">
+    
+                        <img src="{{asset('img/Rectangle 4364.png')}}" height="294" width="248"/>
+    
+    
+                        <div class="loc-cart-info ">
+    
+                            <img src="{{asset('img/VectorWhite.png')}}" height="39" class="icon" width="33"/>
+    
+                            <p>New York</p>
+                        </div>
+                    </div>
+                  
+                </div>
+                
+
+                <div class="swiper-slide">
+                    
+                    <div class="main-loc" style="display:none;width: 100%">
+                        <div class="c-cart-shadow main-loc-cart">
+                            <a href="">
+                            <div class="main-loc-cart-img" style="background-image: url({{asset('img/main-slide/new.png')}});">
+                                <!-- <img class="h-100" src="assets/img/sing.png"/> -->
+                            </div>
+        
+                            <div class="p-s-e-23">
+                                <h2 class="c-card-title">
+                                    <img src="{{asset('img/Vectorloc.svg')}}" height="20" style="width: unset!important;display:inline-block">
+                                    Vancouver
+                                </h2>
+                                <p class="mb-0 color-97 main-loc-info">
+                                    Experience refined European living in our latest apartment condo, perfectly situated in the scenic and vibrant neighbourhood of Burquitlam. Register your interest today and elevate your expectations for a new standard of modern living at ELEMENTS. 
+                                </p>
+        
+                            </div>
+                            <div class="p-s-e-23">
+                                <p class=" c-cart-price color-green d-inline-block mb-0">
+                                    Mid 500's
+                                    -
+                                    1.260's
+                                    
+                                </p>
+        
+                                <div class="clear-fix"></div>
+                            </div>
+                        </a>
+        
+                        </div>
+                    </div>
+                    
+                    <div class="loc-cart loc-cart-small " style="margin-top:81px;width: 100%">
+    
+                        <img src="{{asset('img/Rectangle 4364.png')}}" height="294" width="248"/>
+    
+    
+                        <div class="loc-cart-info ">
+    
+                            <img src="{{asset('img/VectorWhite.png')}}" height="39" class="icon" width="33"/>
+    
+                            <p>New York</p>
+                        </div>
+                    </div>
+                  
+                </div>
+
+
+
+
+                <div class="swiper-slide">
+                    
+                    <div class="main-loc" style="display:none;width: 100%">
+                        <div class="c-cart-shadow main-loc-cart">
+                            <a href="">
+                            <div class="main-loc-cart-img" style="background-image: url({{asset('img/main-slide/new.png')}});">
+                                <!-- <img class="h-100" src="assets/img/sing.png"/> -->
+                            </div>
+        
+                            <div class="p-s-e-23">
+                                <h2 class="c-card-title">
+                                    <img src="{{asset('img/Vectorloc.svg')}}" height="20" style="width: unset!important;display:inline-block">
+                                    Vancouver
+                                </h2>
+                                <p class="mb-0 color-97 main-loc-info">
+                                    Experience refined European living in our latest apartment condo, perfectly situated in the scenic and vibrant neighbourhood of Burquitlam. Register your interest today and elevate your expectations for a new standard of modern living at ELEMENTS. 
+                                </p>
+        
+                            </div>
+                            <div class="p-s-e-23">
+                                <p class=" c-cart-price color-green d-inline-block mb-0">
+                                    Mid 500's
+                                    -
+                                    1.260's
+                                    
+                                </p>
+        
+                                <div class="clear-fix"></div>
+                            </div>
+                        </a>
+        
+                        </div>
+                    </div>
+                    
+                    <div class="loc-cart loc-cart-small " style="margin-top:81px;width: 100%">
+    
+                        <img src="{{asset('img/Rectangle 4364.png')}}" height="294" width="248"/>
+    
+    
+                        <div class="loc-cart-info ">
+    
+                            <img src="{{asset('img/VectorWhite.png')}}" height="39" class="icon" width="33"/>
+    
+                            <p>New York</p>
+                        </div>
+                    </div>
+                  
+                </div>
+
+
+
+
+                </div>
+                
+              </div>
+        
+        <script>
+            var swiper = new Swiper(".mySwiper3", {
+            //   loop: true,
+              watchSlidesProgress: true,
+              slidesPerView: "auto",
+              spaceBetween: 0,
+            
+              navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+
+
+       
+       
     </div>
 </div>
 
 <div class="building-new-home">
 
-    <div class="building-new-home-cart" style="background-image: url('public/images/rectangle-9733.png');">
+    <div class="building-new-home-cart" style="background-image: url({{asset('img/rectangle-9733.png')}});">
         <div class="position-relative h-100">
             <!-- <img src="public//images/rectangle-9733.png"/> -->
             <div class="building-new-home-cart-cover"></div>
@@ -466,9 +800,10 @@
             </div>
         </div>
     </div>
-    <div class="building-new-home-cart">
-        <div class="position-relative">
-            <img src="public//images/rectangle-9733.png"/>
+ 
+    <div class="building-new-home-cart" style="background-image: url({{asset('img/rectangle-9733.png')}});">
+        <div class="position-relative h-100">
+            <!-- <img src="public//images/rectangle-9733.png"/> -->
             <div class="building-new-home-cart-cover"></div>
             <div>
                 <span class="building-new-home-cart-num">01</span>
@@ -487,9 +822,10 @@
             </div>
         </div>
     </div>
-    <div class="building-new-home-cart">
-        <div class="position-relative">
-            <img src="public//images/rectangle-9733.png"/>
+  
+    <div class="building-new-home-cart" style="background-image: url({{asset('img/rectangle-9733.png')}});">
+        <div class="position-relative h-100">
+            <!-- <img src="public//images/rectangle-9733.png"/> -->
             <div class="building-new-home-cart-cover"></div>
             <div>
                 <span class="building-new-home-cart-num">01</span>
@@ -508,9 +844,10 @@
             </div>
         </div>
     </div>
-    <div class="building-new-home-cart">
-        <div class="position-relative">
-            <img src="public//images/rectangle-9733.png"/>
+   
+    <div class="building-new-home-cart" style="background-image: url({{asset('img/rectangle-9733.png')}});">
+        <div class="position-relative h-100">
+            <!-- <img src="public//images/rectangle-9733.png"/> -->
             <div class="building-new-home-cart-cover"></div>
             <div>
                 <span class="building-new-home-cart-num">01</span>
@@ -537,7 +874,7 @@
         <div class="row">
             <div class="col-lg-6 col-12 ps-5 pe-5">
 
-                <img src="assets/img/Group 1000004577.png" class="w-100"/></div>
+                <img src="{{asset('img/Group 1000004577.png')}}" class="w-100"/></div>
             <div class="col-lg-6 col-12  d-flex align-items-center p-5">
                 <div class="align-items-center">
                     <h2 class="dreamstm-title">
@@ -554,8 +891,8 @@
     </div>
 
 </div>
-
-<div class="locations">
+<?php if (0 == 1) { ?>
+ <div class="locations">
     <div class="container ">
         <div class="block-title text-center mb-61 mob-mb-10">
             <div class="text-center  ">
@@ -699,6 +1036,8 @@
     </div>
 
 </div>
+<?php } ?>
+
 
 <footer>
     <div class="back-17 mt-4">
