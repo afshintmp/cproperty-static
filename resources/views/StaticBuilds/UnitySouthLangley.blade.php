@@ -22,7 +22,7 @@
     </style>
 
 
-    <div id="unit-box" class="unit-modal-sec Th-a2" style="display: block!important;">
+    <div id="unit-box" class="unit-modal-sec Th-a2" style="display: none!important;">
 
         <div class="container vh-100 ">
             <div class="row vh-100 justify-content-center align-content-center">
@@ -235,16 +235,10 @@
                         <div class="swiper-wrapper overflow-hidden-c">
 
                             <div class="swiper-slide">
-                                <img src="{{asset('img/e-element/12.png')}}" style="height: 400px;" alt=""/>
+                                <img src="{{asset('img/unity-infopack-east/image(3).png')}}" style="height: 400px;" alt=""/>
                             </div>
 
-                            <div class="swiper-slide">
-                                <img src="{{asset('img/e-element/9.png')}}" style="height: 400px;" alt=""/>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="{{asset('img/e-element/11.png')}}" style="height: 400px;" alt=""/>
-                            </div>
+                       
 
 
                         </div>
@@ -269,7 +263,7 @@
             </div>
 
             <div class="col-lg-4 col-12 h-400 position-relative bg-white">
-                <h1 class="b-title inner-property-title  ">ELEMENTS <span>
+                <h1 class="b-title inner-property-title  ">Unity <span>
                 <img src="{{asset('img/Vector.png')}}" alt="">
                 </span></h1>
                 <div class="price">
@@ -277,7 +271,7 @@
                     <div class="price-wrapper d-inline-block">
                         <span class="price-head ">from</span>
                         <p class="price-field price-field-from--  ">
-                            Mid 500's
+                            $399,900
                         </p>
                     </div>
 
@@ -287,7 +281,7 @@
                     <div class=" price-wrapper d-inline-block">
                         <span class="price-head ">from</span>
                         <p class="price-field price-field-to--  ">
-                            1.260's
+                            $619,900
                         </p>
                     </div>
 
@@ -307,7 +301,7 @@
                         </span>
                         Location :
                         <span>
-                       628 Whiting Way, Coquitlam, BC V3J 2L2
+                            20769 FRASER HWY, LANGLEY
                         </span>
                     </div>
                     <div class="loc--- color-4a">
@@ -346,14 +340,16 @@
                         </svg>
                         </span>
 
-                        Completion Date : <span>November 2026</span>
+                        Completion Date : <span>July 2025</span>
                     </div>
                 </div>
 
                 <div class="dec--ui-- color-97">
-                    Experience refined European living in our latest apartment condo, perfectly situated in the scenic
-                    and vibrant neighbourhood of Burquitlam. Register your interest today and elevate your expectations
-                    for a new standard of modern living at ELEMENTS.
+                    Unity South Langley welcomes you to the vibrant and flourishing neighbourhood of Downtown Langley! This exquisite new
+condo development features 5 floors of stunning residencies with commercial retail space below and an array of lifestyle
+amenities for you and your guests to enjoy. A bright, sleek, modern stand-out development, destined to catch eyes and turn
+heads. Located just steps from the city’s core, Unity South Langley is truly a central hub connecting you to shopping malls,
+entertainment, and the rest of the Lower Mainland via the rapidly developing Surrey Langley Skytrain.
                 </div>
 
 
@@ -361,18 +357,10 @@
                     <div thumbsSlider="" class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="{{asset('img/e-element/12.png')}}" style="" alt=""/>
+                                <img src="{{asset('img/unity-infopack-east/image(3).png')}}"  alt=""/>
                             </div>
 
-                            <div class="swiper-slide">
-                                <img src="{{asset('img/e-element/9.png')}}" style="" alt=""/>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="{{asset('img/e-element/11.png')}}" style="" alt=""/>
-                            </div>
-
-
+                           
                         </div>
                     </div>
                 </div>
@@ -404,28 +392,7 @@
             <div class="col-lg-4 col-12">
 
                 <div class="mapouter">
-                    <div class="gmap_canvas">
-                        <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                                src="https://maps.google.com/maps?&height=400&amp;hl=en&amp;q=628 Whiting Way, Coquitlam, BC V3J 2L2&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-                        <a href="https://connectionsgame.org/">Connections Game</a></div>
-                    <style>.mapouter {
-                            position: relative;
-                            text-align: right;
-                            width: 100%;
-                            height: 400px;
-                        }
-
-                        .gmap_canvas {
-                            overflow: hidden;
-                            background: none !important;
-                            width: 100%;
-                            height: 400px;
-                        }
-
-                        .gmap_iframe {
-                            width: 100% !important;
-                            height: 400px !important;
-                        }</style>
+                    <div style="width: 100%"><iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=20769%20FRASER%20HWY,%20LANGLEY+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="400" frameborder="0"><a href="https://www.maps.ie/population/">Population mapping</a></iframe></div>
                 </div>
             </div>
         </div>
@@ -484,7 +451,7 @@
                                 <div class="overview-item-body">
 
                                     <span class="total-deposit font-regular fz-14">
-                                        20 %
+                                        25 %
                                     </span>
                                     <p class="view-deposit-tab-btn fz-14" onclick="showDepositStructure()">
                                         view deposit structure
@@ -523,7 +490,8 @@
                                         Yes
                                     </span>
                                     <p class="overview-item-body-gray fz-14">
-                                        500$
+                                        $1,000 ASSIGNMENTS (PROMO DOWN FROM
+3%)
                                     </p>
 
 
@@ -548,7 +516,7 @@
                                 </div>
                                 <div class="overview-item-body">
                                           <span class="overview-item-body-item-brown font-regular fz-14">
-                                          0.5   Sq/Ft
+                                          0.33   Sq/Ft
                                             </span>
 
                                 </div>
@@ -691,7 +659,7 @@ yes
                                 <tr>
                                     <td>
                                         <p>
-                                            Th B2
+                                            B1
                                         </p>
                                     </td>
                                     <td>
@@ -701,18 +669,18 @@ yes
                                     </td>
                                     <td>
                                         <p>
-                                            2
+                                            1
                                         </p>
                                     </td>
                                     <td>
                                         <p>
 
-                                            1648 Sq/ft
+                                            684 Sq/ft
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            2-3
+                                            1 and 2 and 3-6
                                         </p>
                                     </td>
                                     <td>
@@ -734,28 +702,28 @@ yes
                                 <tr>
                                     <td>
                                         <p>
-                                            Th A2
+                                            B1.2
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            2
+                                            1+Flex
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            2
+                                            1
                                         </p>
                                     </td>
                                     <td>
                                         <p>
 
-                                            1648 Sq/ft
+                                            622 Sq/ft
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            2-3
+                                           1 and 2 and 3-6
                                         </p>
                                     </td>
                                     <td>
@@ -777,29 +745,29 @@ yes
                                 <tr>
                                     <td>
                                         <p>
-                                            A3
+                                            B3
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            3
+                                            1+flex
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            2
+                                            1
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            1244-1323
+                                           498
                                             Sq/ft
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            8to13 And 16to26
-                                        </p>
+                                            1 and 2 and 3-6
+                                         </p>
                                     </td>
                                     <td>
                                         <span class="text-green">
@@ -820,28 +788,28 @@ connect us
                                 <tr>
                                     <td>
                                         <p>
-                                            E2
+                                            B3.1
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            2
+                                            1
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            2
+                                            1
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            1375
+                                            483
                                             Sq/ft
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-
+                                            1 and 2 and 3-6
                                         </p>
                                     </td>
                                     <td>
@@ -862,28 +830,28 @@ connect us
                                 <tr>
                                     <td>
                                         <p>
-                                            D2
+                                            B5
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            2
+                                            1
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            2
+                                            1
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            923-1002
+                                            568
                                             Sq/ft
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            8to13 And 14to26
+                                            1 and 2 and 3-6
                                         </p>
                                     </td>
                                     <td>
@@ -905,28 +873,28 @@ connect us
                                 <tr>
                                     <td>
                                         <p>
-                                            C2
+                                           B6
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            2
+                                            1
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            2
+                                            1
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            934-1015
+                                           626
                                             Sq/ft
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            8to13 And 14to26
+                                            1 and 2 and 3-6
                                         </p>
                                     </td>
                                     <td>
@@ -949,71 +917,28 @@ connect us
                                 <tr>
                                     <td>
                                         <p>
-                                            B2
+                                            B8
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            2
+                                            1
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            2
+                                            1
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            934-1025
+                                            686
                                             Sq/ft
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            8to13 And 14to26
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <span class="text-green">
-                                            connect us
-                                        </span>
-
-
-                                    </td>
-{{--                                    <td class="line-height-unset border-r-unset">--}}
-{{--                                        <button class="more" onclick="showUnitBox('')"> more--}}
-{{--                                            <img class="vector"--}}
-{{--                                                 src="https://cproperty.ca/wp-content/themes/astra-child/svg/Vector.svg"--}}
-{{--                                                 alt="">--}}
-{{--                                        </button>--}}
-{{--                                    </td>--}}
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <p>
-                                            A2
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <p>
-                                            2
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <p>
-                                            2
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <p>
-                                            910-992
-                                            Sq/ft
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <p>
-                                            8to13 And 14to26
+                                            1 and 2 and 3-6
                                         </p>
                                     </td>
                                     <td>
@@ -1033,91 +958,7 @@ connect us
                                 </tr>
 
 
-                                <tr>
-                                    <td>
-                                        <p>
-                                            D1
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <p>
-                                            1
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <p>
-                                            1
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <p>
-                                            630
-                                            Sq/ft
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <p>
-                                            8to13 And 14to26
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <span class="text-green">
-                                            connect us
-                                        </span>
 
-
-                                    </td>
-{{--                                    <td class="line-height-unset border-r-unset">--}}
-{{--                                        <button class="more" onclick="showUnitBox('')"> more--}}
-{{--                                            <img class="vector"--}}
-{{--                                                 src="https://cproperty.ca/wp-content/themes/astra-child/svg/Vector.svg"--}}
-{{--                                                 alt="">--}}
-{{--                                        </button>--}}
-{{--                                    </td>--}}
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <p>
-                                            A1
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <p>
-                                            1
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <p>
-                                            1
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <p>
-                                            675
-                                            Sq/ft
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <p>
-                                            8to13 And 14to26
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <span class="text-green">
-                                            connect us
-                                        </span>
-
-
-                                    </td>
-{{--                                    <td class="line-height-unset border-r-unset">--}}
-{{--                                        <button class="more" onclick="showUnitBox('')"> more--}}
-{{--                                            <img class="vector"--}}
-{{--                                                 src="https://cproperty.ca/wp-content/themes/astra-child/svg/Vector.svg"--}}
-{{--                                                 alt="">--}}
-{{--                                        </button>--}}
-{{--                                    </td>--}}
-                                </tr>
 
                                 <tr>
                                     <td>
@@ -1127,23 +968,109 @@ connect us
                                     </td>
                                     <td>
                                         <p>
-                                            1
+                                            2
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            1
+                                            2
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            715
+                                            893
                                             Sq/ft
                                         </p>
                                     </td>
                                     <td>
                                         <p>
-                                            8to13 And 14to26
+                                            1 and 2 and 3-6
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <span class="text-green">
+                                            connect us
+                                        </span>
+
+
+                                    </td>
+{{--                                    <td class="line-height-unset border-r-unset">--}}
+{{--                                        <button class="more" onclick="showUnitBox('')"> more--}}
+{{--                                            <img class="vector"--}}
+{{--                                                 src="https://cproperty.ca/wp-content/themes/astra-child/svg/Vector.svg"--}}
+{{--                                                 alt="">--}}
+{{--                                        </button>--}}
+{{--                                    </td>--}}
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <p>
+                                            C2
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            2+flex
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            2
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            880
+                                            Sq/ft
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            1 and 2 and 3-6
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <span class="text-green">
+                                            connect us
+                                        </span>
+
+
+                                    </td>
+{{--                                    <td class="line-height-unset border-r-unset">--}}
+{{--                                        <button class="more" onclick="showUnitBox('')"> more--}}
+{{--                                            <img class="vector"--}}
+{{--                                                 src="https://cproperty.ca/wp-content/themes/astra-child/svg/Vector.svg"--}}
+{{--                                                 alt="">--}}
+{{--                                        </button>--}}
+{{--                                    </td>--}}
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <p>
+                                            C4
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            2
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            2
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            852
+                                            Sq/ft
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            1 and 2 and 3-6
                                         </p>
                                     </td>
                                     <td>
@@ -1197,8 +1124,9 @@ connect us
                     <div class="deposit-structure" style="display: none">
                         <div id="deposit-sec-maker">
 
-                            <div class="deposit-cart deposit-cart-ui"><p></p>
+                            <div class="deposit-cart deposit-cart-ui"><p>5% </p>
                                 <p class="mb-0">
+                                   AT IN 4 DAYS
                                 </p></div>
 
 
@@ -1206,12 +1134,39 @@ connect us
                                     src="{{asset('img/Line 67.svg')}}" alt=""></div>
 
 
+
+                           
+
+                            <div class="deposit-cart deposit-cart-ui"><p>5% </p>
+                                <p class="mb-0">
+                                    IN 30 DAYS
+                                </p></div>
+        
+        
+                            <div class="deposit-cart-seprator">
+                                <img src="{{asset('img/Line 67.svg')}}" alt="">
+                            </div>
+
+
+                            <div class="deposit-cart deposit-cart-ui"><p> </p>
+                                <p class="mb-0">
+                                    3RD
+                                    DEPOSIT WAIVED (OPENING WEEKEND
+                                    PROMO - STANDARD 15%)
+                                </p></div>
+                        
+                        
+                                <div class="deposit-cart-seprator">
+                                    <img src="{{asset('img/Line 67.svg')}}" alt="">
+                                </div>
+                
+
                         </div>
                         <div id="deposit-all-show">
                             <img
                                 src="{{asset('img/Line 68.svg')}}" alt="">
                             <p class="deposit-all-show-text">
-                                % total deposit
+                                25% total deposit
                             </p>
                         </div>
                     </div>

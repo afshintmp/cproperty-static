@@ -22,7 +22,7 @@
     </style>
 
 
-    <div id="unit-box" class="unit-modal-sec Th-a2" style="display: block!important;">
+    <div id="unit-box" class="unit-modal-sec Th-a2" style="display: none!important;">
 
         <div class="container vh-100 ">
             <div class="row vh-100 justify-content-center align-content-center">

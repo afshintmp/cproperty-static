@@ -39,17 +39,9 @@
                             <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="#">Cities</a>
+                            <a href="{{route('build.list')}}">Build</a>
                         </li>
-                        <li>
-                            <a href="#">Articles</a>
-
-                        </li>
-                        <li>
-                            <a href="#">Professionals</a>
-
-                        </li>
-
+                       
                     </ul>
 
 
@@ -377,10 +369,7 @@
                                 guests to
                                 enjoy. A bright, sleek, modern stand-out development, destined to catch eyes and turn
                                 heads.
-                                Located just steps from the city’s core, Unity South Langley is truly a central hub
-                                connecting
-                                you to shopping malls, entertainment, and the rest of the Lower Mainland via the rapidly
-                                developing Surrey-Langley Skytrain.
+                               
                             </p>
                         </div>
                     </div>
@@ -396,15 +385,14 @@
     <script>
 
         var swiper2 = new Swiper(".mySwiper2", {
-            loop: true,
+           
             spaceBetween: 0,
             slidesPerView: 1,
             // freeMode: true,
 
         });
         var swiper = new Swiper(".mySwiper", {
-            loop: true,
-
+        
             watchSlidesProgress: true, thumbs: {
                 swiper: swiper2,
             },
